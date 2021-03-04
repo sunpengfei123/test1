@@ -51,7 +51,7 @@ def get_label(s):
 
 
 if __name__ == '__main__':
-    description = get_description('track1_round1_train_20210222.csv')
-    print(description[0])
-    # label = get_label()
-    # print(label[15])
+    # description = get_description('track1_round1_train_20210222.csv')
+    # print(description[0])
+    label = get_label('track1_round1_train_20210222.csv')
+    print(label[0])
