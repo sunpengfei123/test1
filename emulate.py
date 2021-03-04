@@ -6,7 +6,7 @@ import data
 # 导入CSV安装包
 import csv
 
-new_model=tf.keras.models.load_model("less_model.h5")
+new_model=tf.keras.models.load_model("lstm_model.h5")
 
 test_x = data.get_description('track1_round1_testA_20210222.csv')
 
@@ -18,7 +18,7 @@ np.set_printoptions(suppress=True)
 pr = np.array(pr)
 
 # 1. 创建文件对象
-f = open('testA_result.csv','w',encoding='utf-8')
+f = open('testA_result_lstm.csv','w',encoding='utf-8')
 
 
 # 3. 构建列表头

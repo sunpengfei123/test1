@@ -47,6 +47,18 @@ def get_label(s):
                     index = ((int)(l) -1)
                     la[index] = 1
             label.append(la)
+
+            # de = []
+            # s = "" + re[1].split("|")[1]
+            # for d in s.split(" "):
+            #     if not d == '':
+            #         de.append(int(d))
+            # lab = []
+            # lab.append(la)
+            # lab.append(list(de + [0] * (104 - de.__len__())))
+            # print(lab)
+            # label.append(lab)
+
     return  numpy.array(label, dtype=numpy.int32)
 
 
