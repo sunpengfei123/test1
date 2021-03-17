@@ -6,9 +6,9 @@ import data
 # 导入CSV安装包
 import csv
 
-new_model=tf.keras.models.load_model("model_conv_310.h5")
+new_model=tf.keras.models.load_model("model\\model_conv_att316.h5")
 
-test_x = tf.convert_to_tensor(data.get_test_de('track1_round1_testA_20210222.csv'))
+test_x = tf.convert_to_tensor(data.get_test_de('..\\track1_round1_testA_20210222.csv'))
 
 #使用模型进行预测
 pr = new_model.predict(test_x)
@@ -18,7 +18,7 @@ np.set_printoptions(suppress=True)
 pr = np.array(pr)
 
 # 1. 创建文件对象
-f = open('testA_result_conv310.csv','w',encoding='utf-8')
+f = open('result\\testA_result_conv316_1.csv','w',encoding='utf-8')
 
 
 # 3. 构建列表头
